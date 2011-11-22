@@ -1,7 +1,8 @@
 Name:           kopete-antispam
 Version:        0.5
-Release:        1%{?dist}.R
+Release:        2%{?dist}.R
 Summary:        Antispam plugin for Kopete
+Summary(ru):    Антиспам плагин для Kopete
 
 License:        GPLv2+
 URL:            http://kopeteantispam.sourceforge.net
@@ -19,6 +20,13 @@ Potential spammers receive a simple question, and they are ignored until
 they answers question. After they answers correctly, they receive
 notification, and your chat window opens. Also, you can skip test for
 some contacts, matched by wildcards, specified by configuration dialog.
+
+%description -l ru
+Плагин для Kopete, который позволяет игнорировать спам-сообщения, используя
+простую схему вопрос/ответ:
+потенциальные спамеры получают простой вопрос, и игнорируются, пока не дадут
+на него ответ. После того как правильный ответ дан, они получают уведомление,
+и окно чата откроется.
 
 %prep
 %setup -q -n %{name}-kde4-%{version}
@@ -44,5 +52,8 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Tue Nov 22 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 0.5-2.R
+- Added description in russian language
+
 * Wed Nov 02 2011 Vasiliy N. Glazov <vascom2@gmail.com> - 0.5-1.R
 - initla build
