@@ -1,6 +1,6 @@
 Name:           kopete-antispam
 Version:        0.5
-Release:        2%{?dist}.R
+Release:        2%{?dist}
 Summary:        Antispam plugin for Kopete
 Summary(ru):    Антиспам плагин для Kopete
 
